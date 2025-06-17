@@ -376,8 +376,8 @@ class ShapeComplementarity:
         sc_complex_2 = self.calculate_sc(points_c2, points_c1, self.weight)
 
         sc_score = (np.median(sc_complex_1) + np.median(sc_complex_2) ) / 2
-        if self.verbose:
-            print(f"SC = {sc_score:.2f}")
+        # if self.verbose:
+        print(f"SC = {sc_score}")
 
         if self.plot:
             p1 = self.plot_atoms(complex1.coords, complex2.coords, "Complex 1 and 2 selected atoms")
